@@ -695,3 +695,11 @@ content: '';
 .img1 {
   padding-top: 10%;
 }
+
+.alert{
+  text-align: center;
+  padding: 10px;
+  background: #79c879;
+  margin-bottom: 10px;
+  display: none;
+}

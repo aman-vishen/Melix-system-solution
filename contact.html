@@ -65,34 +65,44 @@
         <section id="Contact form" >
 		<div class="wrapper">
 			<div class="inner">
-				<form action="">
+        <div class="alert">Your message has been sent</div>
+				<form id="contactform1">
 					<h3>Get A Quote</h3>
 					<p>Feel Free To Contact us.</p>
 					<label class="form-group1">
-						<input type="text" class="form-control1"  required>
+						<input type="text" class="form-control1" id="name1" required>
 						<span>Your Name</span>
 						<span class="border"></span>
 					</label>
 					<label class="form-group1">
-						<input type="text" class="form-control1"  required>
+						<input type="text" class="form-control1" id= "Mail1" required>
 						<span for="">Your Mail</span>
 						<span class="border"></span>
 					</label>
 					<label class="form-group1" >
-						<textarea name="" id="" class="form-control1" required></textarea>
+						<textarea id="Message1"  class="form-control1" required></textarea>
 						<span for="">Your Message</span>
 						<span class="border"></span>
 					</label>
-					<button>Submit 
-						<i class="zmdi zmdi-arrow-right"></i>
-					</button>
+					<button type="submit">Submit<i class="zmdi zmdi-arrow-right"></i></button>
 				</form>
 			</div>
     </div>
   </section>
 	
+  <script src="https://smtpjs.com/v3/smtp.js"></script>	
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>	
-	<script src="app.js"></script>
+	
+  <!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase.js"></script>
+
+
+<!-- TODO: Add SDKs for Firebase products that you want to use
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+<script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-analytics.js"></script>
+
+
+<script src="app.js" defer></script>
   </body>
   
 	     <!--footer-->
@@ -103,7 +113,7 @@
               <i class="social-icon fab fa-twitter"></i>
               <i class="social-icon fab fa-instagram"></i>
               <i class="social-icon fas fa-envelope"></i>
-              <p>© Copyright 2020s Melix Systems & Solutions</p>
+              <p>© Copyright 2021s Melix Systems & Solutions</p>
             </div>
           </footer>
 </html>
