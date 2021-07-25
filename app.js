@@ -1,3 +1,7 @@
+gsap.set(".svg1", {transformOrigin: "50% 50%"});
+
+gsap.to(".svg1", {duration: 60, rotation:360 });
+
 // Your web app's Firebase configuration
   // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 var firebaseConfig = {
@@ -20,11 +24,6 @@ console.log(firebase)
 // referance
 
 let contactInfo = firebase.database().ref("user");
-
-console.log("hello");
-gsap.set(".svg1", {transformOrigin: "50% 50%"});
-
-gsap.to(".svg1", {duration: 60, rotation:360 });
 
 
 document.getElementById("contactform1").addEventListener("submit", submitForm);
