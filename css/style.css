@@ -245,7 +245,7 @@ body{
 .ABOUT{
     /*background-image: url("/images/Electronic\ Circuit\ video.mp4");*/
     
-    min-height: 1000px;
+    height: 700px;
     min-width: 300px;
     padding-left: 25px;
     padding-right: 25px;
@@ -505,6 +505,14 @@ footer{
     text-align: center;
     /* padding-left: 80px; */
     font-family: 'Times New Roman', Times, serif;
+  }
+
+@media (max-width: 1380px) {
+
+    .ABOUT{
+      max-width: 50%;
+      height: 1050px;
+    }
   }
 
 @media (max-width: 700px) {
