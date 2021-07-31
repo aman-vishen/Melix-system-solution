@@ -1,0 +1,20 @@
+ <div class="gallery">
+              <a href="" class="big"
+                ><img src="images/accelerated-weathering-tester-500x500.jpg" alt=""
+              /></a>
+              <a href="" class="big"
+                ><img src="images/image2.jpg" alt=""
+              /></a>
+              <a href="" class="big"
+                ><img src="images/imageedit_3_9389301956.png" alt=""
+              /></a>
+              <a href="" class="big"
+                ><img src="images/img0008.jpg" alt=""
+              /></a>
+              <a href="" class="big">
+                <img src="images/uv_2.jpg" alt=""
+              /></a>
+              <a href="" class="big"
+                ><img src="images/uv_alt.jpg" alt=""
+              /></a>
+            </div>
