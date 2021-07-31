@@ -329,8 +329,8 @@ div {
 }
 
 footer{
-  color: aliceblue;
-  background-color:#E43B36;
+  color: #4F4F9C;
+  background-color:#F8F9FB;
   text-align: center;
   align-items: center;
   justify-content: center;
@@ -513,13 +513,20 @@ footer{
       max-width: 50%;
       height: 1050px;
     }
+    
   }
 
-@media (max-width: 700px) {
+
+@media (max-width: 60px) {
 
   .ABOUT{
     max-width: 50%;
     height: 1050px;
+  }
+
+  .article {
+  
+    height: 1700px;
   }
 
   .row{
@@ -663,7 +670,7 @@ content: '';
 .grid > article {
   border: 1px solid #ccc;
   box-shadow: 2px 2px 6px 0px rgba(0, 0, 0, 0.3);
-  height: 75%;
+  height: 900px;
 }
 
 .grid > article img {
