@@ -34,9 +34,10 @@ function submitForm(e){
     var name = getInputVal('name1');
     var mail = getInputVal('Mail1');
     var msg = getInputVal('Message1');
+    var phone = getInputVal('phone');
     
 
-    saveContactInfo(name, mail, msg);
+    saveContactInfo(name, mail, msg, phone);
     
 
 
@@ -49,7 +50,7 @@ function submitForm(e){
 
     document.getElementById('contactform1').reset();
 
-    sendEmail(name, mail, msg);
+    sendEmail(name, mail, msg, phone);
 
     
 }
@@ -62,12 +63,13 @@ function getInputVal(id){
 
 // save infos to firbase
 
-function saveContactInfo(name, mail, msg){
+function saveContactInfo(name, mail, msg, phone){
     let newContactInfo = contactInfo.push();
     newContactInfo.set({
         name: name,
         email: mail,
         message: msg,
+        Phone : phone,
     });
 
     retriveInfos();
@@ -90,7 +92,8 @@ function gotData(data){
         let name = info[infoData].name;
         let email = info[infoData].email;
         let message = info[infoData].message;
-        console.log(name,email,message);
+        let phone = info[infoData].phone;
+        console.log(name,email,message,phone);
 
     
     }
@@ -99,7 +102,7 @@ function gotData(data){
 
 retriveInfos();
 
-function sendEmail(name, email, message){
+function sendEmail(name, email, message, phone){
   Email.send({
       Host: "smtp.gmail.com",
       Username: 'amanvishen46@gmail.com',
@@ -107,7 +110,16 @@ function sendEmail(name, email, message){
       To: 'melixsystemssolutions@gmail.com',
       From:'amanvishen46@gmail.com',
       Subject: `${name} sent you a message`,
-      Body: `Name: ${name}<br/> Email: ${email} <br/> Message: ${message}`,
+      Body: `Name: ${name}<br/> Email: ${email} <br/> Message: ${message}<br/> Phone Number: ${phone}`,
   }).then((message)=>alert("mail sent successfully"))
 }
+
+
+var img = document.getElementById('contact-info').firstChild;
+img.onload = function() {
+    if(img.height > img.width) {
+        img.height = '100%';
+        img.width = 'auto';
+    }
+};
 
